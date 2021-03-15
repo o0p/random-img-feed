@@ -4,9 +4,10 @@ const rows = 10;
 
 for (let i = 0; i < rows * 3; i++) {
     const img = document.createElement('img');
-    img.src = `${unsplashURL}`;    
+    img.src = `${unsplashURL}${getRandSize()}`;
+    container.appendChild(img);
+
 };
-console.log(getRandSize())
 
 function getRandSize() {
     return `${getRandNum()}x${getRandNum()}`
